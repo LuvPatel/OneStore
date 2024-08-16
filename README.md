@@ -119,20 +119,20 @@ This Dockerfile does the following:
 
 If you want to build the Docker image locally from the provided Dockerfile, follow these steps in the terminal:
 
-**Make sure you are logged in to docker**
+### **Make sure you are logged in to docker**
 
 ```
 docker login
 ```
 
-**Build the docker Image:**
+### **Build the docker Image:**
 
 Navigate to the `frontend` directory and build the Docker image:
 ```
 docker build -t DOCKERHUB_USERNAME/REPO_NAME:v6 .
 ```
 
-**Push the docker Image to DockerHub:**
+### **Push the docker Image to DockerHub:**
 
 Once the image is built successfully, push the image to the dockerhub with following command:
 
@@ -142,7 +142,7 @@ docker push <your-dockerhub-username> onestore:v6
 
 Then continue to deploy the stack by making changes to the cloudformation script and updating the docker image name and username. After this, continue to the next step, that is **"Deploying the Stack"**.
 
-**If not making any changes to this project, one can simply run the application by following the below steps:**
+## **If not making any changes to this project, simply run the application by following the below steps:**
 
 * Download the **CloudFormation.yaml** file from the repository.
 * Next, follow the below mentioned steps.
@@ -168,6 +168,7 @@ or Simply copy the value of the Output with name **"CloudInstancePublicIP"**
 
 That's it !!. The application is up and running, without the need to setup anything. 
 
+## Detailed Project Report
 
 A complete Project Report with in-depth details can be found, [click here](docs/Luv_Patel_B00950942_Project_Report.pdf).
 
