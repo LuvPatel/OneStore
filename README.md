@@ -152,5 +152,10 @@ http://<IP Address from the Stack Output>:3000
 ```
 or Simply copy the value of the Output with name **"CloudInstancePublicIP"**
 
+
+
 That's it !!. The application is up and running, without the need to setup anything. 
+
+
+A complete Project Report with in-depth details can be found, [click here](docs/Luv_Patel_B00950942_Project_Report.pdf).
 
