@@ -30,5 +30,5 @@ onestore leverages the following AWS services:
 -   **Amazon SNS**: Sends notifications to users about their file activities.
 
 
-![OneStore Architecture](./images/Architecure Diagram OneStore.jpg)
+![OneStore Architecture](docs/Architecure Diagram OneStore.jpg)
 
