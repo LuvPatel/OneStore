@@ -1,0 +1,56 @@
+/* Navigation.css */
+
+.navbar {
+    background-color: #343a40; /* Dark background */
+    border: none;
+    border-radius: 0;
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #ddd;
+  }
+  
+  .navbar .navbar-toggle {
+    border: none;
+  }
+  
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default bullet points */
+  }
+  
+  .navbar .navbar-nav > li {
+    margin-left: 15px; /* Space between items */
+  }
+  
+  .navbar .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 20px; /* Adjust padding as needed */
+    display: block; /* Ensure the link takes the full height of the navbar */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .navbar .navbar-nav > li > a:hover,
+  .navbar .navbar-nav > li > a:focus {
+    color: #ddd;
+    background-color: #495057; /* Background color on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+  }
+  
