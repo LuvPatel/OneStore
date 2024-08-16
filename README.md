@@ -71,16 +71,18 @@ For the complete CloudFormation template used in this project, [click here](Clou
 # Getting Started
 
 
-### Prerequisites
+## Prerequisites
 
 Before you can run the OneStore application, ensure you have the following installed on your local machine:
 
--   Docker: Make sure Docker is installed and running.
--   DockerHub: Make sure to have dockerhub account and a repository setup.
+-   **Docker**: Make sure [Docker](https://www.docker.com/) is installed and running.
+-   **DockerHub**: Make sure to have a [DockerHub](https://hub.docker.com/) account and a repository setup.
 
-### Building the Docker Image Locally
+## Building the Docker Image Locally
 
 #### Dockerfile
+
+The Dockerfile is a script that contains a series of instructions to create a Docker image. Here’s a breakdown of what each part of the Dockerfile does:
 
 ```
 # Use Node.js 20 image as the base image
@@ -104,6 +106,16 @@ EXPOSE 80
 CMD ["npm", "start"]
 
 ```
+
+This Dockerfile does the following:
+
+* **Base Image**: Starts with the official Node.js 14 image.
+* **Set Working Directory**: Sets /usr/src/app as the working directory inside the container.
+* **Install Dependencies**: Copies the package.json files and installs the Node.js dependencies.
+* **Copy Application Code**: Copies the rest of the application’s source code into the container.
+* **Build the Application**: Runs the build process (if applicable) for your React frontend or Node.js backend.
+* **Expose Port 80**: Opens port 80 to allow access to the application.
+* **Run the Application**: Specifies the command to start the application when the container runs.
 
 If you want to build the Docker image locally from the provided Dockerfile, follow these steps in the terminal:
 
